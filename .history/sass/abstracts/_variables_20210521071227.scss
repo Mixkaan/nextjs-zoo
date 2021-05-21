@@ -1,0 +1,38 @@
+// * * * * * * * * * * * * //
+// * - - - COLORS - - - *  //
+// * * * * * * * * * * * * //
+
+
+$btn-color: (
+
+  primary: (
+    base: rgb(0, 0, 0),
+    hover: #ffff,
+    text-color: #ffff
+  ),
+  secondary: (
+    base: rgb(47, 59, 77),
+    hover: #ffff,
+    text-color: rgba(255, 255, 255, 0.333)
+  ),
+  success: (
+    base: #333,
+    hover: #2222,
+    text-color: #444
+  ),
+  info: (
+    base: #333,
+    hover: #2222,
+    text-color: #444
+  ),
+  warning: (
+    base: #333,
+    hover: #2222,
+    text-color: #444
+  ),
+  danger: (
+    base: #333,
+    hover: #2222,
+    text-color: #444
+  )
+)

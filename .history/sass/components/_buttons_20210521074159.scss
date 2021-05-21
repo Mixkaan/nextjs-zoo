@@ -1,0 +1,5 @@
+@use '../abstracts/mixins/components/buttons.scss';
+
+.c-primary {
+  @include mount-btn-styles(primary);
+}

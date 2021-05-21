@@ -1,6 +1,14 @@
 {
   "cSpell.ignoreWords": [
     "fokiu",
+    "mixins",
     "tailwindcss"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#015266",
+    "statusBar.debuggingBackground": "#015266",
+    "statusBar.noFolderBackground": "#015266",
+    "statussBar.prominentBackground": "#015266"
+  },
+  "peacock.color": "#BDB76B"
 }

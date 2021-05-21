@@ -1,0 +1,49 @@
+@import '../../_variables';
+
+// * Mixin props for Button -> Component ________/> 
+
+@mixin set-btn-default-props {
+
+  max-width: 12rem;
+  @apply p-5;
+}
+
+@mixin mount-btn-styles( $button-type) {
+  @include set-btn-default-props;
+
+  color: map-get( $btn-color, #{ $button-type}, text-color);
+  background-color: map-get( $btn-color, $button-type, base);
+  @if $button-type == '' {
+    border-radius: 300px;
+  }
+  border-radius: 0;
+
+}
+
+// @mixin default-btn-props( $form, $type, $set) {
+
+//   @if $form == 'square' {
+    
+//     max-width: 12rem;
+//     @apply p-2;
+//     color: map-get( $btn-color, #{$type}, text-color);
+//     background: map-get($btn-color, $type, $set);
+  
+//     &:hover {
+//       color: invert( map-get( $btn-color, #{$type}, text-color));
+//       background: map-get( $btn-color, #{$type}, hover );
+//     }
+//   }
+
+
+//   max-width: 12rem;
+//     @apply rounded-2xl;
+//     color: map-get( $btn-color, #{$type}, text-color);
+//     background: map-get($btn-color, $type, $set);
+  
+//     &:hover {
+//       color: invert( map-get( $btn-color, #{$type}, text-color));
+//       background: map-get( $btn-color, #{$type}, hover );
+//     }
+
+// }

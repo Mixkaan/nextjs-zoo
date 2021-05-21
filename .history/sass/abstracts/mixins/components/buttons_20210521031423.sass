@@ -1,0 +1,4 @@
+@use './'
+@mixin defaul-button-properties($btn-color, $type, $set)
+  @apply p-2
+  background: map-get($btn-color, $type, $set)

@@ -1,0 +1,11 @@
+@import '../../_variables';
+
+@mixin default-btn-props( $type, $set) {
+
+  max-width: 12rem;
+  @apply p-2;
+  background: map-get($btn-color, $type, $set);
+  &:hover {
+    background: map-get( $btn-color, #{$type} hover );
+  }
+}

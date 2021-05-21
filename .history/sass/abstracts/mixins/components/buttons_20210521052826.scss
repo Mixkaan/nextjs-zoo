@@ -1,0 +1,11 @@
+@import '../../_variables';
+
+@mixin default-btn-props( $type, $set) {
+
+  @apply p-2;
+  background: map-get($btn-color, $);
+}
+
+// @mixin defaul-btn-props( $type, $def)
+//   @apply p-2
+//   background: map-get($btn-color, $type, $def)

@@ -1,0 +1,16 @@
+@import '../../_variables';
+
+// * Mixin props for Button -> Component ________/> 
+// 1 - set variables type & set from btn-color map
+// 2 - set font text color
+// 3 - apply changes in text-color using invert
+// 4 - set new color on :hover event
+
+@mixin default-btn-props( $type, $set) {
+
+  @if $form == 'square' {
+    
+  }
+
+   
+}

@@ -1,0 +1,20 @@
+@import '../../_variables';
+
+// * Mixin props for Button -> Component 
+// 1 - set variables type & set from btn-color map
+// 2 - set font text color
+// 3 - apply changes in text-color using invert
+// 4 - set new color on :hover event
+
+@mixin default-btn-props( $type, $set) {
+
+  max-width: 12rem;
+  @apply p-2;
+  color: map-get( $btn-color, #{$type}, text-color);
+  background: map-get($btn-color, $type, $set);
+
+  &:hover {
+    color: invert( map-get( $btn-color, #{$type}, text-color));
+    background: map-get( $btn-color, #{$type}, hover );
+  }
+}
